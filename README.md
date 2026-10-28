@@ -1,5 +1,19 @@
 # English–French Translation with an LSTM Encoder–Decoder
 
+## Interactive Streamlit app
+
+A companion application is available in [streamlit_app/app.py](streamlit_app/app.py).
+
+```bash
+python -m pip install -r streamlit_app/requirements.txt
+python -m streamlit run streamlit_app/app.py
+```
+
+The first translation downloads Helsinki-NLP/opus-mt-en-fr. This pretrained adaptation is distinct from the notebook LSTM. Full download/inference was not tested locally and may exceed a small host memory budget.
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for Community Cloud setup, validation coverage, and runtime requirements. A live deployment is not yet confirmed.
+
+
 A sequence-to-sequence learning notebook for English-to-French translation using TensorFlow/Keras.
 
 ## Why this project matters
